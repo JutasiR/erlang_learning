@@ -1,5 +1,5 @@
 -module(practice_functions).
--export([double/1, fac/1, mult/2, convert/2, convert_length/1]).
+-export([double/1, fac/1, mult/2, convert/2]).
 
 % BASIC FUNCTIONS
 % variables must start with capital letters
@@ -25,14 +25,3 @@ convert(N, centimeter) ->
   N * 2.54.
 
 % 'convert' does not say much about what it converts from and to
-% TUPLES
-
-convert_length({centimeter, X}) ->
-  {inch, X / 2.54};
-
-convert_length({inch, Y}) ->
-  {centimeter, Y * 2.54}.
-
-% tuples can have more than 2 parts:
-% {moscow, {c, -10}} or {paris, {f, 28}}
-% here is an example for a city and a second tuple as a 2nd element for temperature unit and value

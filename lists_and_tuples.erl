@@ -24,3 +24,9 @@ list_length([]) ->
   0;
 list_length([First | Rest]) ->
   1 + list_length(Rest).
+
+% tuples used as 'records' or 'structs' in other languages and lists when we want to represent things with
+% varying size
+
+% Erland does not have string data type, strings are represented by lists of ASCII characters
+% So list [97, 98, 99] is equivalent to "abs"
